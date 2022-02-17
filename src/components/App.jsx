@@ -1,3 +1,6 @@
+import Profile from "./Profile/Profile";
+
+
 export const App = () => {
   return (
     <div
@@ -11,7 +14,8 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      React homework template
+      <Profile
+      />
     </div>
   );
 };
