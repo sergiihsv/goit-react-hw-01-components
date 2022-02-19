@@ -1,39 +1,27 @@
-import styles from './Profile.module.css';
+import s from './Profile.module.css';
 
-const user = {
-  username: 'Jacques Gluke',
-  tag: 'jgluke',
-  location: 'Ocho Rios, Jamaica',
-  avatar: 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
-  stats: {
-    followers: 5603,
-    views: 4827,
-    likes: 1308,
-  },
-};
-
-function Profile(props) {
+function Profile({ username, tag, location, avatar, stats }) {
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={user.avatar} alt="User avatar" className="avatar" />
-        <p className="name">{user.username}</p>
-        <p className="tag">{user.tag}</p>
-        <p className="location">{user.location}</p>
+    <div className={s.Profile}>
+      <div className={s.Description}>
+        <img src={avatar} alt="User avatar" className={s.Avatar} />
+        <p className={s.Name}>{username}</p>
+        <p className={s.Tag}>{tag}</p>
+        <p className={s.Location}>{location}</p>
       </div>
 
-      <ul className="stats">
+      <ul className={s.Stats}>
         <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{user.stats.followers}</span>
+          <span className={s.Label}>Followers</span>
+          <span className={s.Quantity}>{stats.followers}</span>
         </li>
         <li>
-          <span className="label">Views</span>
-          <span className="quantity">{user.stats.views}</span>
+          <span className={s.Label}>Views</span>
+          <span className={s.Quantity}>{stats.views}</span>
         </li>
         <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{user.stats.likes}</span>
+          <span className={s.Label}>Likes</span>
+          <span className={s.Quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
