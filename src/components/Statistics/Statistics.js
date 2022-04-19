@@ -4,8 +4,8 @@ import s from './Statistics.module.css';
 function Statistics({ title, stats }) {
   return (
     <section className={s.Statistics}>
-      {title.length > 0 && <h2 className={s.Title}>{title}</h2>}
-
+     {/*  {title.length > 0 && <h2 className={s.Title}>{title}</h2>}
+ */}
       <ul className={s.Stat_list}>
         <li className={s.Item}>
           <span className={s.Label}>.docx</span>
