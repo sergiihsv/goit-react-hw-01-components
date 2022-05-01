@@ -9,7 +9,7 @@ function Profile({ username, tag, location, avatar, stats }) {
       <div className={s.Description}>
         <img src={avatar} alt="User avatar" className={s.Avatar} />
         <p className={s.Name}>{username}</p>
-        <p className={s.Tag}>{tag}</p>
+        <p className={s.Tag}>@{tag}</p>
         <p className={s.Location}>{location}</p>
       </div>
 
@@ -32,11 +32,16 @@ function Profile({ username, tag, location, avatar, stats }) {
 }
 
 Profile.propTypes = {
-  username: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  avatar: PropTypes.string,
-  stats: PropTypes.object,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+		views: PropTypes.number.isRequired,
+		likes: PropTypes.number.isRequired,
+
+  })
 };
 
 export default Profile;
