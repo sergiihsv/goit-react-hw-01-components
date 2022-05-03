@@ -4,6 +4,7 @@ import data from '../components/Statistics/data.json';
 import Statistics from "./Statistics/Statistics";
 
 
+
 export const App = () => {
   return (
     <div
@@ -25,8 +26,9 @@ export const App = () => {
   stats={user.stats}
       />
       
-      {/* <Statistics title="Upload stats" stats={data} />  */}
-      <Statistics stats={data}/>
+      <Statistics title="Upload stats" stats={data} />  
+      
+      
      
     </div>
   );
