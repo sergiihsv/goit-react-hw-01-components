@@ -1,0 +1,15 @@
+.Item{
+font-size: 10px;
+}
+
+
+.StatusOnLine{
+background-color: green;
+
+}
+
+
+.StatusOfLine{
+background-color: red;
+
+}

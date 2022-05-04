@@ -1,4 +1,4 @@
-/* import PropTypes from 'prop-types'; */
+import PropTypes from 'prop-types';
 import s from './FriendList.module.css';
 import FriendListItem from './FriendListItem'
 
@@ -10,10 +10,12 @@ function FriendList({ friends }) {
   <FriendListItem friends={friends} />
 </ul>
     );
-    
-    
-    
-}
+    }
+
+FriendListItem.propTypes = {
+	friends: PropTypes.array.isRequired,
+};
+
 
 
 export default FriendList;
