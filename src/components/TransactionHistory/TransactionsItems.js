@@ -10,7 +10,8 @@ function TransactionsItems({ transactions }) {
     </tr>
     )
 
-	)}
+    )
+};
 
 TransactionsItems.propTypes = {
   transactions: PropTypes.arrayOf(

@@ -1,19 +1,20 @@
 import PropTypes from 'prop-types';
 import s from './Profile.module.css';
+import {Container, ProfileCard, StatisticList,Avatar,UserName,TagText,LocationText} from "./ProfileStyled"
 
 
 
 function Profile({ username, tag, location, avatar, stats }) {
   return (
-    <div className={s.Profile}>
-      <div className={s.Description}>
-        <img src={avatar} alt="User avatar" className={s.Avatar} />
-        <p className={s.Name}>{username}</p>
-        <p className={s.Tag}>@{tag}</p>
-        <p className={s.Location}>{location}</p>
-      </div>
+    <Container>
+      <ProfileCard>
+        <Avatar src={avatar} alt="User avatar"  />
+        <UserName>{username}</UserName>
+        <TagText>@{tag}</TagText>
+        <LocationText>{location}</LocationText>
+      </ProfileCard>
 
-      <ul className={s.Stats}>
+      <StatisticList>
         <li>
           <span className={s.Label}>Followers</span>
           <span className={s.Quantity}>{stats.followers}</span>
@@ -26,8 +27,8 @@ function Profile({ username, tag, location, avatar, stats }) {
           <span className={s.Label}>Likes</span>
           <span className={s.Quantity}>{stats.likes}</span>
         </li>
-      </ul>
-    </div>
+      </StatisticList>
+    </Container>
   );
 }
 

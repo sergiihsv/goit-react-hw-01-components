@@ -20,7 +20,7 @@ function TransactionsHistory ({ transactions }) {
         
         
     );
-    }
+};
 
     TransactionsHistory.propTypes = {
 	transactions: PropTypes.arrayOf(PropTypes.shape).isRequired,
