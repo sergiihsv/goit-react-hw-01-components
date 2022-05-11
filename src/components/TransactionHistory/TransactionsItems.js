@@ -1,21 +1,16 @@
-import PropTypes from "prop-types";
-/* import s from './TransactionHistory.module.css'; */
-
+import PropTypes from 'prop-types';
 
 function TransactionsItems({ transactions }) {
-	return transactions.map((transaction) => (
-		 <tbody key={transaction.id}>
-     <tr >
-      <td>{transaction.type}</td>
-      <td>{transaction.amount}</td>
-      <td>{transaction.currency}</td>
+    return transactions.map(({ id, type, amount, currency }) => (
+         
+    <tr key={id} >
+                <td>{type}</td>
+                <td>{amount}</td>
+                <td>{currency}</td>
     </tr>
-  </tbody>
-	)
+    )
 
 	)}
-
-
 
 TransactionsItems.propTypes = {
   transactions: PropTypes.arrayOf(
@@ -27,6 +22,7 @@ TransactionsItems.propTypes = {
     })
   ),
 };
+
 
 
 export default TransactionsItems;
