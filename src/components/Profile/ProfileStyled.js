@@ -27,5 +27,15 @@ export const TagText = styled.p`
 font-size: 16px;
 `
 export const LocationText = styled.p`
-font-size: 16px;
+font-size: 14px;
+`
+export const StatisticItems = styled.li`
+ font-size: 14px;
+`
+export const Label = styled.p`
+font-size: 12px;
+`
+
+export const Quantity = styled.p`
+font-size: 12px;
 `

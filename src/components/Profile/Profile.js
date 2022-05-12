@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
-import s from './Profile.module.css';
-import {Container, ProfileCard, StatisticList,Avatar,UserName,TagText,LocationText} from "./ProfileStyled"
+import {Container, ProfileCard, StatisticList,Avatar,UserName,TagText,LocationText,StatisticItems,Label,Quantity} from "./ProfileStyled"
 
 
 
@@ -15,18 +14,18 @@ function Profile({ username, tag, location, avatar, stats }) {
       </ProfileCard>
 
       <StatisticList>
-        <li>
-          <span className={s.Label}>Followers</span>
-          <span className={s.Quantity}>{stats.followers}</span>
-        </li>
-        <li>
-          <span className={s.Label}>Views</span>
-          <span className={s.Quantity}>{stats.views}</span>
-        </li>
-        <li>
-          <span className={s.Label}>Likes</span>
-          <span className={s.Quantity}>{stats.likes}</span>
-        </li>
+        <StatisticItems>
+          <Label>Followers</Label>
+          <Quantity>{stats.followers}</Quantity>
+        </StatisticItems>
+        <StatisticItems>
+          <Label>Views</Label>
+          <Quantity>{stats.views}</Quantity>
+        </StatisticItems>
+        <StatisticItems>
+          <Label>Likes</Label>
+          <Quantity>{stats.likes}</Quantity>
+        </StatisticItems>
       </StatisticList>
     </Container>
   );
