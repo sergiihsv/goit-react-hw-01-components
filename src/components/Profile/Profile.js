@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import {Container, ProfileCard, StatisticList,Avatar,UserName,TagText,LocationText,StatisticItems,Label,Quantity} from "./ProfileStyled"
+import {Container, ProfileCard, StatisticList, Avatar, UserName, TagText, LocationText, StatisticItems, Label, Quantity} from "./ProfileStyled"
 
 
 

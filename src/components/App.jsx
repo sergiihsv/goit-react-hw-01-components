@@ -11,13 +11,16 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
+        /* height: '100vh',
+        display: 'block', */
+       /*  justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
-        textTransform: 'uppercase',
-        color: '#010101',
+        fontSize: 40, */
+        /* textTransform: 'uppercase', */
+       /*  color: '#010101',
+        margin: '0 auto', */
+       /*  padding: '50px 10px', */
+	     /*  width: '1004px', */
       }}
     >
      <Profile
