@@ -1,9 +1,10 @@
 import TransactionsItems from "./TransactionsItems";
 import PropTypes from 'prop-types';
+import {Table} from "./TransactionsStyled"
 
 function TransactionsHistory ({ transactions }) {
     return (
-        <table /* class="transaction-history" */>
+        <Table>
   <thead>
     <tr>
       <th>Type</th>
@@ -15,7 +16,7 @@ function TransactionsHistory ({ transactions }) {
   <tbody>
    <TransactionsItems transactions={transactions} />
   </tbody>
-</table>
+</Table>
         
         
         

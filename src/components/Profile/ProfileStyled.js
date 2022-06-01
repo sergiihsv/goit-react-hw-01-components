@@ -25,7 +25,7 @@ export const Avatar = styled.img`
 `
 
 export const UserName = styled.p`
-font-size: 18px;
+font-size: 28px;
 `
 
 export const TagText = styled.p`
