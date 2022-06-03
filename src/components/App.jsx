@@ -7,26 +7,14 @@ import friends from "../components/FriendList/friends.json"
 import TransactionsHistory from "./TransactionHistory/TransactionsHistory"
 import transactions from "../components/TransactionHistory/transactions.json"
 import {Container} from "./AppStyled";
+import {GlobalStyle} from "../constans/GlobalStyles"
 
 
 export const App = () => {
   return (
-    <Container
-      style={{
-        /* height: '100vh',
-        display: 'block', */
-       /*  justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40, */
-        /* textTransform: 'uppercase', */
-       /*  color: '#010101',
-        margin: '0 auto', */
-       /*  padding: '50px 10px', */
-	     /*  width: '1004px', */
-      }}
-    >
-      
-     <Profile
+    <Container>
+      <GlobalStyle/>
+      <Profile
   username={user.username}
   tag={user.tag}
   location={user.location}

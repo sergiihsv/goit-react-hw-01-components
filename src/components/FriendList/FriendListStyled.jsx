@@ -17,20 +17,21 @@ border-radius: 50%;
 ` */
 
 export const OnLine = styled.span`
-background-color: green;
-width:25px;
-height:25px;
+
+width:15px;
+height:15px;
 margin-right:10px;
 border-radius: 50%;	
-    
+background-color: green;   
 `
 
 export const OffLine = styled.span`
-background-color: red;
-width:25px;
-height:25px;
+
+width:15px;
+height:15px;
 margin-right:10px;
 border-radius: 50%;	
+background-color: red;
 
     
 `
