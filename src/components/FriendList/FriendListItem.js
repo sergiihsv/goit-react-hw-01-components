@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
-import s from './FriendList.module.css';
+import {Item,Avatar,Name, OnLine ,OffLine} from "./FriendListStyled"
 
 
 
 
 function FriendListItem({ friends }) {
 	return friends.map((friend) => (
-		<li className={s.Item} key={friend.id}>
-			{friend.isOnline ? (<span className={s.StatusOnLine}>isOnline</span>) : (<span className={s.StatusOfLine}>isNotOnline</span>)}
-			<img className={s.Avatar} src={friend.avatar} alt='User avatar' width="48" />
-			<p className={s.Name}>{friend.name}</p>
-		</li>
+		<Item key={friend.id}>
+			{friend.isOnline ? <OnLine/> : <OffLine/>}
+			<Avatar src={friend.avatar} alt='User avatar' width="48" />
+			<Name>{friend.name}</Name>
+		</Item>
 	)
 
 	)}

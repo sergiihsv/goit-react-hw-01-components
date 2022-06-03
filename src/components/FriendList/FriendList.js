@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
-import s from './FriendList.module.css';
+import {FriendsList} from "./FriendListStyled"
 import FriendListItem from './FriendListItem'
 
 
 
 function FriendList({ friends }) {
     return (
-        <ul className={s.Friend_list}>
+        <FriendsList>
   <FriendListItem friends={friends} />
-</ul>
+</FriendsList>
     );
     }
 
