@@ -1,40 +1,61 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-margin: 20px;
-font-size: 20px;
-display: block;
+  display: block;
+  margin: 0 auto;
+  width:50%;
+  height:auto;
+  border-radius:10%;
 `
 
 export const ProfileCard = styled.div`
    text-align: center;
 	padding: 30px 0;
- font-size: 12px;
- background-color: aquamarine;
+   background-color: white;
+
+
 `
 
-export const StatisticList = styled.ul`
-font-size: 18px;
-`
 export const Avatar = styled.img`
-   text-align: center;
-	height: 150px;
+   height: 150px;
   width: 150px;
   border-radius: 50%;
 	overflow: hidden;
+display: block;
+  margin: 0 auto;
+  background-color: grey;
+  margin-bottom:20px;
 `
 
 export const UserName = styled.p`
-font-size: 28px;
-`
+font-size: 24px;
+font-weight:600;
+line-height:1.5;
+margin-bottom:15px;
 
+`
 export const TagText = styled.p`
-font-size: 14px;
-
+font-size: 16px;
+font-weight:500;
+line-height:1.5;
+margin-bottom:15px;
 `
+
 export const LocationText = styled.p`
 font-size: 16px;
+font-weight:500;
+line-height:1.5;
 `
+
+export const StatisticList = styled.ul`
+display: flex;
+justify-content:space-between;
+align-items:center;
+text-align: center;
+
+`
+
+
 export const StatisticItems = styled.li`
  font-size: 14px;
 `

@@ -14,7 +14,7 @@ html {
   height: 100%;
 }
 body {
-  background-color: #d3ecdc
+  background-color: #d3ecdc;
 }
 img,
 picture,
