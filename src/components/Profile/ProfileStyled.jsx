@@ -5,7 +5,8 @@ export const Container = styled.div`
   margin: 0 auto;
   width:50%;
   height:auto;
-  border-radius:10%;
+  border-radius:8px;
+  margin-bottom:30px;
 `
 
 export const ProfileCard = styled.div`
@@ -52,17 +53,40 @@ display: flex;
 justify-content:space-between;
 align-items:center;
 text-align: center;
+background-color:#e4e2d9 ;
+border-top: 1px solid  rgba(47, 48, 58, 0.1);
+border-end-start-radius: 8px;
+	border-end-end-radius: 8px;
+
 
 `
-
 
 export const StatisticItems = styled.li`
- font-size: 14px;
+display: flex;
+flex-wrap: nowrap;
+align-items:center;
+flex-direction: column;
+ width: calc(100% / 3);
+justify-content: center;
+
+
+&:not(:last-child) {
+   border-right: 1px solid rgba(47, 48, 58, 0.1);
+}
 `
+
+
 export const Label = styled.p`
-font-size: 12px;
+font-size: 16px;
+font-weight:400;
+line-height:1.8;
+color:#4d5d53;
+
 `
 
 export const Quantity = styled.p`
-font-size: 12px;
+font-size: 18px;
+font-weight:500;
+line-height:2;
+
 `
