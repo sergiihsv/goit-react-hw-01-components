@@ -6,7 +6,7 @@ function StatisticList({ data }) {
         data.map(item =>
             <Item  key={item.id}>
       <Label>{item.label}</Label>
-                <Percentage>{item.percentage}</Percentage>
+                <Percentage>{item.percentage}%</Percentage>
             </Item>
         )
 )
