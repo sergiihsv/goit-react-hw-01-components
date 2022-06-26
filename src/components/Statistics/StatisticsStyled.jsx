@@ -68,7 +68,7 @@ color: ${(props)=>props.theme.colors.white};
 export const  Percentage = styled.span`
 font-size:24px;
 font-weight:500;
-line-height:2.8;
+line-height:1.6;
 color: ${(props)=>props.theme.colors.white};
 `
     
