@@ -1,39 +1,38 @@
 import styled from "@emotion/styled";
 
 export const  FriendsList = styled.ul`
-    list-style: none;
+display:block;
+margin:0 auto;
+   width: calc(100% / 3);
+   margin-bottom: ${(props) => props.theme.spacing(10)};
 `
 
 export const Item = styled.li`
-font-size: 10px;
+background-color: ${(props) => props.theme.colors.white};
+	padding: ${(props) => props.theme.spacing(3)};
+	border-radius: ${(props) => props.theme.spacing(1)};
+	box-shadow: ${(props) => props.theme.colors.boxShadow};
+	overflow: hidden;
+	&:not(:last-child) {
+		margin-bottom: ${(props) => props.theme.spacing(5)};
+	}
 
 `
 
-/* const Status = styled.span`
+const Status = styled.span`
+display: inherit;
 width:15px;
 height:15px;
-margin-right:10px;
-border-radius: 50%;	
-` */
-
-export const OnLine = styled.span`
-
-width:15px;
-height:15px;
-margin-right:10px;
-border-radius: 50%;	
-background-color: green;   
+border-radius: 50%;
+margin-right: ${(props) => props.theme.spacing(6)};
 `
 
-export const OffLine = styled.span`
+export const OnLine = styled(Status)`
+background-color: ${(props) => props.theme.colors.green};   
+`
 
-width:15px;
-height:15px;
-margin-right:10px;
-border-radius: 50%;	
-background-color: red;
-
-    
+export const OffLine = styled(Status)`
+background-color: ${(props)=> props.theme.colors.red};
 `
 
 export const Avatar = styled.img`
