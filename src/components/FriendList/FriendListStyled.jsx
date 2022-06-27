@@ -8,6 +8,9 @@ margin:0 auto;
 `
 
 export const Item = styled.li`
+display: flex;
+justify-content:flex-start;
+align-items:center;
 background-color: ${(props) => props.theme.colors.white};
 	padding: ${(props) => props.theme.spacing(3)};
 	border-radius: ${(props) => props.theme.spacing(1)};
@@ -36,11 +39,14 @@ background-color: ${(props)=> props.theme.colors.red};
 `
 
 export const Avatar = styled.img`
-    border-radius: 10%;
+    margin-right: ${(props) => props.theme.spacing(3)};
+	border-radius: 10%;
 	overflow: hidden;
+	background: ${(props) => props.theme.colors.greyBg};
 `
 
 export const Name = styled.p`
-    font-size:16px;
-
+    font-size:24px;
+    font-family: ${(props) => props.theme.fonts.secondary};
+	
 `
