@@ -1,18 +1,18 @@
 import PropTypes from 'prop-types';
-import StatisticList from "./StatisticList";
-import {Section,Card,Title,List} from "./StatisticsStyled"
+import StatisticList from './StatisticList';
+import { Section, Card, Title, List } from './StatisticsStyled';
 
 function Statistics({ title, stats }) {
   return (
     <Section>
       <Card>
-      {title && <Title>{title}</Title>}
+        {title && <Title>{title}</Title>}
 
-      <List>
-      <StatisticList data={stats}/> 
-      </List>
+        <List>
+          <StatisticList data={stats} />
+        </List>
       </Card>
-      </Section>
+    </Section>
   );
 }
 

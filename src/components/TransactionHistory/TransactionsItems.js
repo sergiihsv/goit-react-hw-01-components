@@ -1,17 +1,14 @@
 import PropTypes from 'prop-types';
 
 function TransactionsItems({ transactions }) {
-    return transactions.map(({ id, type, amount, currency }) => (
-         
-    <tr key={id} >
-                <td>{type}</td>
-                <td>{amount}</td>
-                <td>{currency}</td>
+  return transactions.map(({ id, type, amount, currency }) => (
+    <tr key={id}>
+      <td>{type}</td>
+      <td>{amount}</td>
+      <td>{currency}</td>
     </tr>
-    )
-
-    )
-};
+  ));
+}
 
 TransactionsItems.propTypes = {
   transactions: PropTypes.arrayOf(
@@ -23,7 +20,5 @@ TransactionsItems.propTypes = {
     })
   ),
 };
-
-
 
 export default TransactionsItems;
