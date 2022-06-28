@@ -1,11 +1,11 @@
 import Profile from './Profile/Profile';
-import user from '../components/Profile/user.json';
+import user from '../data/user.json';
 import Statistics from './Statistics/Statistics';
-import data from '../components/Statistics/data.json';
+import data from '../data/statistics.json';
 import FriendList from './FriendList/FriendList';
-import friends from '../components/FriendList/friends.json';
+import friends from '../data/friends.json';
 import TransactionsHistory from './TransactionHistory/TransactionsHistory';
-import transactions from '../components/TransactionHistory/transactions.json';
+import transactions from '../data/transactions.json';
 import { Container } from './AppStyled';
 import { GlobalStyle } from '../constans/GlobalStyles';
 
